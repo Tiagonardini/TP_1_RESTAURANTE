@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47423218-007c-4d55-9072-9f3e537fb36a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Bebida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/ComarcaPlus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Comensal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/MasterCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Mesa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Plato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Restaurante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Viedma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Visa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/claseTest/RestauranteTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dpmdR7ajVF6HdbLfnIdlRv1flk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.RestauranteTest.calcularCostoConViedma.executor": "Run",
+    "JUnit.RestauranteTest.calcularCostoConVisa.executor": "Run",
+    "JUnit.RestauranteTest.test01.executor": "Run",
+    "JUnit.RestauranteTest.testCalcularCostoConComarcaPlus.executor": "Run",
+    "JUnit.RestauranteTest.testCalcularCostoConMasterCard.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Tiago/IdeaProjects/TP_Restaurant/src/main/java/org/example/Main.java"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.RestauranteTest.calcularCostoConViedma">
+    <configuration name="RestauranteTest.calcularCostoConViedma" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_Restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="claseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="claseTest" />
+      <option name="MAIN_CLASS_NAME" value="claseTest.RestauranteTest" />
+      <option name="METHOD_NAME" value="calcularCostoConViedma" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestauranteTest.calcularCostoConVisa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_Restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="claseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="claseTest" />
+      <option name="MAIN_CLASS_NAME" value="claseTest.RestauranteTest" />
+      <option name="METHOD_NAME" value="calcularCostoConVisa" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestauranteTest.testCalcularCostoConComarcaPlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_Restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="claseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="claseTest" />
+      <option name="MAIN_CLASS_NAME" value="claseTest.RestauranteTest" />
+      <option name="METHOD_NAME" value="testCalcularCostoConComarcaPlus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestauranteTest.testCalcularCostoConMasterCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_Restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="claseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="claseTest" />
+      <option name="MAIN_CLASS_NAME" value="claseTest.RestauranteTest" />
+      <option name="METHOD_NAME" value="testCalcularCostoConMasterCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RestauranteTest.calcularCostoConViedma" />
+        <item itemvalue="JUnit.RestauranteTest.calcularCostoConVisa" />
+        <item itemvalue="JUnit.RestauranteTest.testCalcularCostoConMasterCard" />
+        <item itemvalue="JUnit.RestauranteTest.testCalcularCostoConComarcaPlus" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47423218-007c-4d55-9072-9f3e537fb36a" name="Changes" comment="" />
+      <created>1710713842361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710713842361</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.text.DecimalFormat" memberName="bigIntegerMultiplier" />
+        <PinnedItemInfo parentTag="java.text.DecimalFormat" memberName="bigDecimalMultiplier" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="df" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
