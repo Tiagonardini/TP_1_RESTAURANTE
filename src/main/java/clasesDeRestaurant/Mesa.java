@@ -21,12 +21,9 @@ public class Mesa {
         if (porcentajePropina > 0) {
             for (Pedido pedido : pedidos) {
                 valorBebida += pedido.obtenerValorBebida();
-                System.out.print("valor b " + valorBebida + "\n");
                 valorComida += pedido.obtenerValorPlato();
-                System.out.print("valor c " + valorComida + "\n");
             }
             double propina = (valorBebida + valorComida) * (porcentajePropina / 100);
-            System.out.print("propina: " + propina + "\n");
             totalDescontado = tarjeta.descuento(valorBebida, valorComida, propina);
             juntarPropina(propina);
         }

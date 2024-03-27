@@ -12,7 +12,7 @@ public class ComarcaPlus extends Tarjeta{
             limite -= totalAPagar;
             return totalAPagar;
         }
-        return 0;
+        return 0; //tirar excecion
     }
     @Override
     boolean activa() {
