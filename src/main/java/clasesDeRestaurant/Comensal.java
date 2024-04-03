@@ -6,7 +6,7 @@ public class Comensal {
         this.nombreDeComensal = nombreDeComensal;
     }
     public void realizarPedido(Plato plato1, Bebida bebida1, Mesa mesa) {
-        var pedido = new Pedido(plato1, bebida1);
+        var pedido = new Pedido(bebida1, plato1);
         mesa.agregarPedido(pedido);
     }
 }

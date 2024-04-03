@@ -7,6 +7,7 @@ public class Viedma extends Tarjeta {
         super(nroDeTarjeta, fechaDeVencimiento, limite, duenio);
         descuento = 1.00;
     }
+
     @Override
     double descuento(double costoBebida, double costoPlato, double costoPropina) {
         if (!superaLimite(costoBebida, costoPlato, costoPropina) && (activa())) {
