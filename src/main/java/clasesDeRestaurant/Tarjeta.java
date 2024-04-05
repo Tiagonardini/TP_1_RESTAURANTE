@@ -16,7 +16,6 @@ public abstract class Tarjeta {
     this.limite = limite;
     this.duenio = duenio;
     }
-
     abstract double descuento(double costoBebida, double costoPlato, double costoPropina);
 
     abstract boolean activa();

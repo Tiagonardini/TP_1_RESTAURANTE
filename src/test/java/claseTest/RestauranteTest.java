@@ -1,7 +1,10 @@
 package claseTest;
 import clasesDeRestaurant.*;
 import org.junit.Test;
+import persistencia.DatosEnDisco;
+import persistencia.PersistirDatos;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 import static org.junit.Assert.*;
@@ -10,13 +13,15 @@ import static org.junit.Assert.*;
 public class RestauranteTest {
 
     @Test
-     public void testCalcularCostoConComarcaPlus(){
+     public void testCalcularCostoConComarcaPlus() throws IOException {
+        var memoria = new DatosEnDisco();
+
         Restaurante resto1 = new Restaurante("Don Juan");
 
         var bebida1 = new Bebida ("Coca Cola", 2000.0);
         var plato1 = new Plato("Fideos con salsa rosa", 5000.0);
 
-        var mesa1 = new Mesa(3);
+        var mesa1 = new Mesa(3, memoria);
 
         resto1.agregarMesa(mesa1);
 
@@ -38,7 +43,8 @@ public class RestauranteTest {
     }
 
     @Test
-   public void testCalcularCostoConMasterCard(){
+   public void testCalcularCostoConMasterCard() throws IOException {
+        var memoria = new DatosEnDisco();
        var resto1 = new Restaurante("Sal y Fuego");
 
        var bebida1 = new Bebida("Sprite", 1500.0);
@@ -49,7 +55,7 @@ public class RestauranteTest {
        var comida2 = new Plato("Milanesa de carne", 15000.0);
        var comida3 = new Plato("Papas Fritas", 8000.0);
 
-       var mesa = new Mesa( 6);
+       var mesa = new Mesa( 6, memoria);
 
        resto1.agregarMesa(mesa);
 
@@ -80,13 +86,14 @@ public class RestauranteTest {
     }
 
     @Test
-    public void calcularCostoConVisa(){
+    public void calcularCostoConVisa() throws IOException {
+        var memoria = new DatosEnDisco();
         Restaurante resto1 = new Restaurante("Magu");
 
         var bebida1 = new Bebida ("Fernet Branca", 8000.0);
         var plato1 = new Plato("Pizza Muzzarella", 10000.0);
 
-        var mesa1 = new Mesa(1);
+        var mesa1 = new Mesa(1, memoria);
         resto1.agregarMesa(mesa1);
         Comensal tiago = new Comensal("Tiago Nardini");
 
@@ -102,7 +109,9 @@ public class RestauranteTest {
     }
 
     @Test
-    public void calcularCostoConViedma(){
+    public void calcularCostoConViedma() throws IOException {
+
+        var memoria = new DatosEnDisco();
         Restaurante resto1 = new Restaurante("Pizza Planeta");
 
         var bebida1 = new Bebida ("Fernet Branca", 8000.0);
@@ -110,7 +119,7 @@ public class RestauranteTest {
         var plato1 = new Plato("Pizza capresse", 11000.0);
         var plato2 = new Plato("Pizza cuatro quesos", 15000.0);
 
-        var mesa1 = new Mesa(2);
+        var mesa1 = new Mesa(2, memoria);
 
 
         resto1.agregarMesa(mesa1);
