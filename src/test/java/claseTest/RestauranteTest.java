@@ -1,6 +1,7 @@
 package claseTest;
 import clasesDeRestaurant.*;
 import org.junit.Test;
+import persistencia.DatosEnBase;
 import persistencia.DatosEnDisco;
 import persistencia.PersistirDatos;
 
@@ -138,6 +139,36 @@ public class RestauranteTest {
 
 
         assertTrue(mesa1.realizarPago(tarjViedma,2) == 37740);
+    }
+
+    @Test
+    public void testCalcularCostoConComarcaPlusenBaseDeDatos() throws IOException {
+        var memoria = new DatosEnBase();
+
+        Restaurante resto1 = new Restaurante("Don Juan");
+
+        var bebida1 = new Bebida ("Coca Cola", 2000.0);
+        var plato1 = new Plato("Fideos con salsa rosa", 5000.0);
+
+        var mesa1 = new Mesa(3, memoria);
+
+        resto1.agregarMesa(mesa1);
+
+        Comensal tiago = new Comensal("Tiago Nardini");
+        Comensal sofia = new Comensal("Sofia Villegas");
+        Comensal juan = new Comensal("Juan Villegas");
+
+        var tarjComarcaPlus = new ComarcaPlus(12345678, LocalDate.now().plusMonths(10), 50000.00, juan);
+
+        mesa1.agregarComensal(tiago);
+        mesa1.agregarComensal(sofia);
+        mesa1.agregarComensal(juan);
+
+        tiago.realizarPedido(plato1,bebida1,mesa1);
+        sofia.realizarPedido(plato1,bebida1,mesa1);
+        juan.realizarPedido(plato1,bebida1,mesa1);
+
+        assertTrue(mesa1.realizarPago(tarjComarcaPlus, 5) == 21630);
     }
 
 

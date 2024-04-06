@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47423218-007c-4d55-9072-9f3e537fb36a" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/DatosEnBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/DatosEnDisco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/PersistirDatos.java" afterDir="false" />
+    <list default="true" id="47423218-007c-4d55-9072-9f3e537fb36a" name="Changes" comment="guardar en nota de texto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Mesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Tarjeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clasesDeRestaurant/Tarjeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistencia/DatosEnBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistencia/DatosEnBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/claseTest/RestauranteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/claseTest/RestauranteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +23,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tiagonardini&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="dbfb0daa-a37c-420f-a3ff-d6fd68bfde0a" />
+        <option name="url" value="https://github.com/Tiagonardini/TP_1_RESTAURANTE.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -38,28 +53,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.RestauranteTest.calcularCostoConViedma.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RestauranteTest.calcularCostoConVisa.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RestauranteTest.test01.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RestauranteTest.testCalcularCostoConComarcaPlus.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RestauranteTest.testCalcularCostoConMasterCard.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Tiago/IdeaProjects/TP_Restaurant/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.RestauranteTest.calcularCostoConViedma.executor": "Run",
+    "JUnit.RestauranteTest.calcularCostoConVisa.executor": "Run",
+    "JUnit.RestauranteTest.test01.executor": "Run",
+    "JUnit.RestauranteTest.testCalcularCostoConComarcaPlus.executor": "Run",
+    "JUnit.RestauranteTest.testCalcularCostoConComarcaPlusenBaseDeDatos.executor": "Run",
+    "JUnit.RestauranteTest.testCalcularCostoConMasterCard.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "TP2",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Tiago/IdeaProjects/TP_Restaurant/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="clasesDeRestaurant" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RestauranteTest.testCalcularCostoConComarcaPlus">
+  <component name="RunManager" selected="JUnit.RestauranteTest.testCalcularCostoConComarcaPlusenBaseDeDatos">
     <configuration name="RestauranteTest.calcularCostoConViedma" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP_Restaurant" />
       <extension name="coverage">
@@ -108,6 +131,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestauranteTest.testCalcularCostoConComarcaPlusenBaseDeDatos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP_Restaurant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="claseTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="claseTest" />
+      <option name="MAIN_CLASS_NAME" value="claseTest.RestauranteTest" />
+      <option name="METHOD_NAME" value="testCalcularCostoConComarcaPlusenBaseDeDatos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RestauranteTest.testCalcularCostoConMasterCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TP_Restaurant" />
       <extension name="coverage">
@@ -126,6 +165,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestauranteTest.testCalcularCostoConComarcaPlusenBaseDeDatos" />
         <item itemvalue="JUnit.RestauranteTest.testCalcularCostoConComarcaPlus" />
         <item itemvalue="JUnit.RestauranteTest.calcularCostoConViedma" />
         <item itemvalue="JUnit.RestauranteTest.calcularCostoConVisa" />
@@ -157,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711575130744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="guardar en nota de texto">
+      <option name="closed" value="true" />
+      <created>1712276076575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712276076575</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +221,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="guardar en nota de texto" />
+    <option name="LAST_COMMIT_MESSAGE" value="guardar en nota de texto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
