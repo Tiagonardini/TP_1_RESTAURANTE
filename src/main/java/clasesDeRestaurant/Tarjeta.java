@@ -1,5 +1,6 @@
 package clasesDeRestaurant;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 public abstract class Tarjeta {
@@ -16,7 +17,7 @@ public abstract class Tarjeta {
     this.limite = limite;
     this.duenio = duenio;
     }
-    abstract double descuento(double costoBebida, double costoPlato, double costoPropina);
+    abstract double descuento(double costoBebida, double costoPlato, double costoPropina) throws IOException;
 
     abstract boolean activa();
 

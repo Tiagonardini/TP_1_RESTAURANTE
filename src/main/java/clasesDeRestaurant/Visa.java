@@ -3,20 +3,21 @@ package clasesDeRestaurant;
 import java.time.LocalDate;
 
 public class Visa extends Tarjeta {
+
+    private static final double DESCUENTO = 0.97;
+
     public Visa(Integer nroDeTarjeta, LocalDate fechaDeVencimiento, double limite, Comensal duenio) {
         super(nroDeTarjeta, fechaDeVencimiento, limite, duenio);
-        descuento = 0.97;
     }
 
     @Override
     double descuento(double costoBebida, double costoPlato, double costoPropina) {
         if (!superaLimite(costoBebida, costoPlato, costoPropina) && (activa())) {
-            double totalAPagar = (costoBebida * descuento) + costoPlato + costoPropina;
-            System.out.print(+totalAPagar);
+            double totalAPagar = (costoBebida * DESCUENTO) + costoPlato + costoPropina;
             limite -= totalAPagar;
             return totalAPagar;
         }
-        return 0;
+        throw new RuntimeException("El total supera el limite...");
     }
     @Override
     boolean activa() {

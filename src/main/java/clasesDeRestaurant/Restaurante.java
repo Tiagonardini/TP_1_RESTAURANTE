@@ -7,6 +7,7 @@ public class Restaurante {
     private String nombreDeRestaurante;
     private List<Mesa> mesas;
 
+
     public Restaurante(String nombreDelRestaurante){
         this.nombreDeRestaurante = nombreDelRestaurante;
         this.mesas = new ArrayList<>();
@@ -19,6 +20,5 @@ public class Restaurante {
             this.mesas.add(unaMesa);
         }
     }
-
 
 }

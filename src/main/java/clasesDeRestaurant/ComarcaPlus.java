@@ -1,18 +1,22 @@
 package clasesDeRestaurant;
+import java.io.IOException;
 import java.time.LocalDate;
 public class ComarcaPlus extends Tarjeta{
+
+    private static final double DESCUENTO = 0.98;
+
+
     public ComarcaPlus(Integer nroDeTarjeta, LocalDate fechaDeVencimiento, double saldo, Comensal duenio) {
         super(nroDeTarjeta, fechaDeVencimiento, saldo, duenio);
-        descuento = 0.98;
     }
     @Override
-    double descuento(double costoBebida, double costoPlato, double costoPropina) {
+    double descuento(double costoBebida, double costoPlato, double costoPropina) throws IOException {
         if (!superaLimite(costoBebida, costoPlato, costoPropina) && (activa())) {
-            double totalAPagar = costoPropina + (costoBebida * descuento + costoPlato * descuento);
+            double totalAPagar = costoPropina + (costoBebida * DESCUENTO + costoPlato * DESCUENTO);
             limite -= totalAPagar;
             return totalAPagar;
         }
-        return 0; //tirar excecion
+        throw new RuntimeException("El total supera el limite...");
     }
     @Override
     boolean activa() {
